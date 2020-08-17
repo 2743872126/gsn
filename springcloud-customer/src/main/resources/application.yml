@@ -1,0 +1,13 @@
+server:
+  port: 8031
+
+spring:
+  application:
+    name: cloud-customer
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # 服务路径（注册中心路径）：在注册中心进行服务注册
+    service-url:
+      defaultZone: http://localhost:8001/eureka
